@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Petri\'s Nets Game</string>
+    <string name="play">Gioca</string>
+    <string name="hint">Inserisci il nome</string>
+    <string name="player_1">Giocatore 1</string>
+    <string name="insert_names">Inserisci i nomi dei giocatori:</string>
+    <string name="start">Avvia</string>
+</resources>
