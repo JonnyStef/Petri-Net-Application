@@ -12,4 +12,5 @@
     <color name="sfondo">#FFECB3</color>
     <color name="splash">#FFE082</color>
     <color name="barra">#FFCC80</color>
+    <color name="pause">#C6FF00</color>
 </resources>
