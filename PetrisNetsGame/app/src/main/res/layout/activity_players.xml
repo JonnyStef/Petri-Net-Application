@@ -33,7 +33,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Giocatore 2"
+        android:text="@string/player2"
         android:textSize="17sp"
         android:textColor="@color/red"
         app:layout_constraintBottom_toTopOf="@+id/player2editText"
@@ -83,8 +83,8 @@
 
     <ImageButton
         android:id="@+id/backButton"
-        android:layout_width="63dp"
-        android:layout_height="63dp"
+        android:layout_width="59dp"
+        android:layout_height="57dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/button_back"

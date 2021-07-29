@@ -26,8 +26,22 @@ public class PlayersActivity extends AppCompatActivity {
         String player1Name = player1.getText().toString();
         String player2Name = player2.getText().toString();
 
+        if(player1Name.isEmpty()){
+            player1.setError(getString(R.string.empty_warning));
+            player1.requestFocus();
+            return;
 
-        Intent intent = new Intent(this, GameActivity.class);
+        }
+
+        if(player2Name.isEmpty()){
+            player2.setError(getString(R.string.empty_warning));
+            player2.requestFocus();
+            return;
+
+        }
+
+
+        Intent intent = new Intent(this, MultiplayerGameActivity_player1.class);
         //salva i nomi inseriti e li porta nella GameActivity
         intent.putExtra("Nomi", new String[] {player1Name, player2Name});
         startActivity(intent);
