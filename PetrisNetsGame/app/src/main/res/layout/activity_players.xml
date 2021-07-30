@@ -24,8 +24,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/player_1"
+        android:textStyle="bold"
         android:textColor="@color/blue"
-        android:textSize="17sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/player1editText"
         app:layout_constraintStart_toStartOf="@+id/player1editText" />
 
@@ -34,7 +35,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/player2"
-        android:textSize="17sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
         android:textColor="@color/red"
         app:layout_constraintBottom_toTopOf="@+id/player2editText"
         app:layout_constraintStart_toStartOf="@+id/player2editText" />
@@ -45,9 +47,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="92dp"
         android:ems="10"
-        android:maxLength="8"
         android:hint="@string/hint"
         android:inputType="textPersonName"
+        android:maxLength="8"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,9 +62,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:ems="10"
-        android:maxLength="8"
         android:hint="@string/hint"
         android:inputType="textPersonName"
+        android:maxLength="8"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,12 +75,12 @@
         android:id="@+id/buttonAvvia"
         android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="180dp"
         android:background="@drawable/button_play"
         android:onClick="buttonAvviaOnClick"
         android:text="@string/start"
-        android:textStyle="bold"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/player2editText" />
@@ -91,5 +95,20 @@
         android:onClick="buttonBackOnClick"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_arrow_back" />
+        app:srcCompat="@drawable/ic_arrow_back"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/buttonRules"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/button_rules"
+        android:onClick="buttonRulesOnClick"
+        android:text="Regole"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player2editText" />
 </androidx.constraintlayout.widget.ConstraintLayout>

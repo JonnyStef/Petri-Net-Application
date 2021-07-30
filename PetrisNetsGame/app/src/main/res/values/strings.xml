@@ -30,4 +30,7 @@
     <string name="twoPlayers">2 Giocatori</string>
     <string name="player2">Giocatore 2</string>
     <string name="empty_warning">Il nome non può essere vuoto!</string>
+    <string name="game_target1">- L\' obiettivo del gioco è raggiungere la configurazione finale (segnata dagli stati riempiti di verde) nel minor tempo possibile</string>
+    <string name="game_target2">- Dopo Che il Giocatore 1 ha completato la partita, viene segnato il suo tempo di completamento e dovrà passare lo smartphone al Giocatore 2 che per iniziare la partita dovrà cliccare il pulsante INIZIA</string>
+    <string name="game_target3">- Concluso il Giocatore 2, viene segnato il suo tempo e si procede con il confronto dei tempi: il giocatore che ha realizzato il tempo più basso vince.</string>
 </resources>

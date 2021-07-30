@@ -92,8 +92,6 @@ public class MultiplayerGameActivity_player1 extends AppCompatActivity {
         });
 
 
-
-
     }
 
     @Override
@@ -140,34 +138,34 @@ public class MultiplayerGameActivity_player1 extends AppCompatActivity {
             }
 
     public void startT2(View view) {
-        Toast.makeText(MultiplayerGameActivity_player1.this, R.string.disabilitated_transition, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, R.string.disabilitated_transition, Toast.LENGTH_SHORT).show();
     }
 
     public void startT3(View view) {
-        Toast.makeText(MultiplayerGameActivity_player1.this, R.string.disabilitated_transition, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, R.string.disabilitated_transition, Toast.LENGTH_SHORT).show();
     }
 
     public void startT4(View view) {
-        Toast.makeText(MultiplayerGameActivity_player1.this, R.string.disabilitated_transition, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, R.string.disabilitated_transition, Toast.LENGTH_SHORT).show();
     }
 
     public void startT5(View view) {
-        Toast.makeText(MultiplayerGameActivity_player1.this, R.string.disabilitated_transition, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, R.string.disabilitated_transition, Toast.LENGTH_SHORT).show();
     }
 
     public void startT6(View view) {
-        Toast.makeText(MultiplayerGameActivity_player1.this, R.string.disabilitated_transition, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, R.string.disabilitated_transition, Toast.LENGTH_SHORT).show();
     }
 
     public void startT7(View view) {
-        Toast.makeText(MultiplayerGameActivity_player1.this, R.string.disabilitated_transition, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, R.string.disabilitated_transition, Toast.LENGTH_SHORT).show();
     }
 
     public void startT8(View view) {
-        Toast.makeText(MultiplayerGameActivity_player1.this, R.string.disabilitated_transition, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, R.string.disabilitated_transition, Toast.LENGTH_SHORT).show();
     }
 
     public void startT9(View view) {
-        Toast.makeText(MultiplayerGameActivity_player1.this, R.string.disabilitated_transition, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, R.string.disabilitated_transition, Toast.LENGTH_SHORT).show();
     }
 }

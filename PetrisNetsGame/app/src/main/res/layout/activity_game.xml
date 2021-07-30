@@ -47,11 +47,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_transition"
         android:onClick="startT1"
         android:text="@string/t1"
         android:textSize="20sp"
-        android:background="@drawable/button_transition"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageNet" />
 
@@ -70,12 +70,13 @@
         android:id="@+id/buttonT2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/t2"
+        android:layout_marginTop="20dp"
         android:background="@drawable/button_transition"
         android:onClick="startT2"
+        android:text="@string/t2"
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/buttonT3"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toEndOf="@+id/buttonT1"
         app:layout_constraintTop_toBottomOf="@+id/imageNet" />
 
@@ -83,12 +84,12 @@
         android:id="@+id/buttonT3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:text="@string/t3"
-        android:textSize="20sp"
         android:background="@drawable/button_transition"
         android:onClick="startT3"
+        android:text="@string/t3"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageNet" />
 
@@ -137,7 +138,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/button_transition"
         android:onClick="startT7"
         android:text="@string/t7"
@@ -145,29 +146,29 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonT4"
-        app:layout_constraintVertical_bias="0.333" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/buttonT8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/button_transition"
         android:onClick="startT8"
         android:text="@string/t8"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttonT9"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toEndOf="@+id/buttonT7"
         app:layout_constraintTop_toBottomOf="@+id/buttonT5"
-        app:layout_constraintVertical_bias="0.333" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/buttonT9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/button_transition"
         android:onClick="startT9"
@@ -176,7 +177,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonT6"
-        app:layout_constraintVertical_bias="0.333" />
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -78,6 +78,7 @@
         android:layout_marginTop="48dp"
         android:background="@drawable/button_play"
         android:text="@string/button_start"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
