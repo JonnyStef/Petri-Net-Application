@@ -14,10 +14,9 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MultiplayerGameActivity_player1 extends AppCompatActivity {
+public class MultiplayerGameActivity_player2 extends AppCompatActivity {
 
     Button t1, t2, t3, t4, t5, t6, t7, t8, t9;
-    Button inizia;
     TextView timeFinish,giocatore2TextTurn;
     ImageView net;
     Chronometer chronometer;
@@ -49,44 +48,11 @@ public class MultiplayerGameActivity_player1 extends AppCompatActivity {
         String[] playerNames = getIntent().getStringArrayExtra("Nomi");
 
         if (playerNames != null) {
-            playerTurn.setText(("E' il turno di " + playerNames[0]));
+            playerTurn.setText(("E' il turno di " + playerNames[1]));
 
         }
-
     }
 
-    public void createFirstGamePopup(){
-
-        dialogbuilder = new AlertDialog.Builder(this);
-        final View finishPopupView = getLayoutInflater().inflate(R.layout.finish_popup, null);
-
-        timeFinish = finishPopupView.findViewById(R.id.timeFinishText);
-        giocatore2TextTurn = finishPopupView.findViewById(R.id.giocatore2Text);
-        inizia = finishPopupView.findViewById(R.id.buttonInizia);
-
-        dialogbuilder.setView(finishPopupView);
-        dialog = dialogbuilder.create();
-        dialog.show();
-        dialog.setCanceledOnTouchOutside(false);
-
-        timeFinish.setText(chronometer.getText());
-
-        String[] playerNames = getIntent().getStringArrayExtra("Nomi");
-        giocatore2TextTurn.setText(playerNames[1]);
-
-        inizia.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent i = new Intent(MultiplayerGameActivity_player1.this, MultiplayerGameActivity_player2.class);
-                i.putExtra("punteggio_giocatore1", new CharSequence[] {chronometer.getText()});
-                i.putExtra("Nomi", playerNames);
-                startActivity(i);
-            }
-        });
-
-
-    }
 
     @Override
     public void onBackPressed() {
@@ -100,36 +66,35 @@ public class MultiplayerGameActivity_player1 extends AppCompatActivity {
     }
 
 
-        public void buttonEscOnClick(View view) {
+    public void buttonEscOnClick(View view) {
 
-            AlertDialog.Builder builder = new AlertDialog.Builder(MultiplayerGameActivity_player1.this);
-            builder.setTitle(R.string.warning);
-            builder.setMessage(R.string.warning_message);
-            builder.setPositiveButton("Sì", (dialog, which) -> {
+        AlertDialog.Builder builder = new AlertDialog.Builder(MultiplayerGameActivity_player2.this);
+        builder.setTitle(R.string.warning);
+        builder.setMessage(R.string.warning_message);
+        builder.setPositiveButton("Sì", (dialog, which) -> {
 
-                startActivity(new Intent(MultiplayerGameActivity_player1.this, MainActivity.class));
+            startActivity(new Intent(MultiplayerGameActivity_player2.this, MainActivity.class));
 
-            });
+        });
 
-            builder.setNegativeButton("No", (dialog, which) -> {
+        builder.setNegativeButton("No", (dialog, which) -> {
 
-                dialog.dismiss();
+            dialog.dismiss();
 
-            });
-            builder.show();
+        });
+        builder.show();
+    }
+
+    public void startT1(View view) {
+        if (areDrawablesIdentical(net.getDrawable(), getDrawable(R.drawable.rete1_init))) {
+            net.setImageResource(R.drawable.rete1_t1);
+            chronometer.stop();
+
+        } else {
+            Toast.makeText(this, R.string.disabilitated_transition, Toast.LENGTH_SHORT).show();
+
         }
-
-            public void startT1(View view) {
-                if (areDrawablesIdentical(net.getDrawable(), getDrawable(R.drawable.rete1_init))) {
-                    net.setImageResource(R.drawable.rete1_t1);
-                    createFirstGamePopup();
-                    chronometer.stop();
-
-                } else {
-                    Toast.makeText(MultiplayerGameActivity_player1.this, R.string.disabilitated_transition, Toast.LENGTH_SHORT).show();
-
-                }
-            }
+    }
 
     public void startT2(View view) {
         Toast.makeText(this, R.string.disabilitated_transition, Toast.LENGTH_SHORT).show();
