@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Petri\'s Nets Game</string>
     <string name="play">Gioca</string>
     <string name="hint">Inserisci il nome</string>
@@ -30,9 +30,14 @@
     <string name="twoPlayers">2 Giocatori</string>
     <string name="player2">Giocatore 2</string>
     <string name="empty_warning">Il nome non può essere vuoto!</string>
-    <string name="game_target1">- L\' obiettivo del gioco è raggiungere la configurazione finale (segnata dagli stati riempiti di verde) nel minor tempo possibile</string>
-    <string name="game_target2">- Dopo Che il Giocatore 1 ha completato la partita, viene segnato il suo tempo di completamento e dovrà passare lo smartphone al Giocatore 2 che per iniziare la partita dovrà cliccare il pulsante INIZIA</string>
-    <string name="game_target3">- Concluso il Giocatore 2, viene segnato il suo tempo e si procede con il confronto dei tempi: il giocatore che ha realizzato il tempo più basso vince.</string>
+    <string name="game_target1" tools:ignore="Typos">- L\' obiettivo del gioco è raggiungere la configurazione finale (segnata dagli stati riempiti di verde) nel minor tempo possibile</string>
+    <string name="game_target2">- Dopo Che il Giocatore 1 ha completato la partita, viene segnato il suo tempo di completamento e dovrà passare lo smartphone al Giocatore 2 che per iniziare la partita dovrà cliccare il pulsante "Inizia"</string>
+    <string name="game_target3" tools:ignore="Typos">- Concluso il Giocatore 2, viene segnato il suo tempo e si procede con il confronto dei tempi: il giocatore che ha realizzato il tempo più basso vince.</string>
     <string name="draw_message">Nessuno dei 2: è un Pareggio!</string>
     <string name="the_winner_is">Il Vincitore è :</string>
+    <string name="rules_title">Regole</string>
+    <string name="player1_start">- Inizia il Giocatore 1</string>
+    <string name="player_finish_string">ha concluso con il tempo di:</string>
+    <string name="restart">Restart</string>
+    <string name="home">Home</string>
 </resources>

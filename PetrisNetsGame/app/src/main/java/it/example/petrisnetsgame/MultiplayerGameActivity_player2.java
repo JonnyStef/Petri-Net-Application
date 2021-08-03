@@ -1,5 +1,6 @@
 package it.example.petrisnetsgame;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -19,11 +20,9 @@ public class MultiplayerGameActivity_player2 extends AppCompatActivity {
 
     Button t1, t2, t3, t4, t5, t6, t7, t8, t9;
     Button restart, home;
-    TextView timeFinishPlayer1, timeFinishPlayer2,giocatore2Name, giocatore1Name, winner;
+    TextView timeFinishPlayer1, timeFinishPlayer2, giocatore1Name, winner;
     ImageView net;
     Chronometer chronometer;
-    private AlertDialog.Builder dialogbuilder;
-    private AlertDialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +56,7 @@ public class MultiplayerGameActivity_player2 extends AppCompatActivity {
 
     public void createEndGamePopup(){
 
-        dialogbuilder = new AlertDialog.Builder(this);
+        AlertDialog.Builder dialogbuilder = new AlertDialog.Builder(this);
         final View finishGamePopupView = getLayoutInflater().inflate(R.layout.finish_player2_popup, null);
 
         timeFinishPlayer1 = finishGamePopupView.findViewById(R.id.timeFinishPlayer1Text);
@@ -69,9 +68,10 @@ public class MultiplayerGameActivity_player2 extends AppCompatActivity {
 
 
         dialogbuilder.setView(finishGamePopupView);
-        dialog = dialogbuilder.create();
+        AlertDialog dialog = dialogbuilder.create();
         dialog.show();
         dialog.setCanceledOnTouchOutside(false);
+        dialog.setCancelable(false);
 
         timeFinishPlayer2.setText(chronometer.getText().toString());
         String minutesPlayer2 = (chronometer.getText().toString()).substring(0,1);
@@ -112,7 +112,6 @@ public class MultiplayerGameActivity_player2 extends AppCompatActivity {
         });
 
 
-
     }
 
     public String compareTimes(int min1, int sec1, int min2, int sec2) {
@@ -134,8 +133,6 @@ public class MultiplayerGameActivity_player2 extends AppCompatActivity {
                 return getString(R.string.draw_message);
         }
     }
-
-
 
     @Override
     public void onBackPressed() {
@@ -161,6 +158,7 @@ public class MultiplayerGameActivity_player2 extends AppCompatActivity {
         builder.show();
     }
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     public void startT1(View view) {
         if (areDrawablesIdentical(net.getDrawable(), getDrawable(R.drawable.rete1_init))) {
             net.setImageResource(R.drawable.rete1_t1);
@@ -204,4 +202,6 @@ public class MultiplayerGameActivity_player2 extends AppCompatActivity {
     public void startT9(View view) {
         Toast.makeText(this, R.string.disabilitated_transition, Toast.LENGTH_SHORT).show();
     }
+
+
 }

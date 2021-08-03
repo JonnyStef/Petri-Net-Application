@@ -14,5 +14,6 @@
     <color name="barra">#FFCC80</color>
     <color name="pause">#C6FF00</color>
     <color name="sfondo_pausa">#FFF8E1</color>
-    <color name="verde">#00E676</color>
+    <color name="green">#00E676</color>
+    <color name="yellow">#FDCE3F</color>
 </resources>

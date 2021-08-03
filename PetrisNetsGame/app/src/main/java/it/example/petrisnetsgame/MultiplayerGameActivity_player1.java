@@ -1,5 +1,6 @@
 package it.example.petrisnetsgame;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -21,8 +22,6 @@ public class MultiplayerGameActivity_player1 extends AppCompatActivity {
     TextView timeFinish,giocatore2TextTurn;
     ImageView net;
     Chronometer chronometer;
-    private AlertDialog.Builder dialogbuilder;
-    private AlertDialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +56,7 @@ public class MultiplayerGameActivity_player1 extends AppCompatActivity {
 
     public void createFirstGamePopup(){
 
-        dialogbuilder = new AlertDialog.Builder(this);
+        AlertDialog.Builder dialogbuilder = new AlertDialog.Builder(this);
         final View finishPopupView = getLayoutInflater().inflate(R.layout.finish_player1_popup, null);
 
         timeFinish = finishPopupView.findViewById(R.id.timeFinishText);
@@ -65,7 +64,7 @@ public class MultiplayerGameActivity_player1 extends AppCompatActivity {
         inizia = finishPopupView.findViewById(R.id.buttonInizia);
 
         dialogbuilder.setView(finishPopupView);
-        dialog = dialogbuilder.create();
+        AlertDialog dialog = dialogbuilder.create();
         dialog.show();
         dialog.setCanceledOnTouchOutside(false);
         dialog.setCancelable(false);
@@ -112,6 +111,7 @@ public class MultiplayerGameActivity_player1 extends AppCompatActivity {
             builder.show();
         }
 
+            @SuppressLint("UseCompatLoadingForDrawables")
             public void startT1(View view) {
                 if (areDrawablesIdentical(net.getDrawable(), getDrawable(R.drawable.rete1_init))) {
                     net.setImageResource(R.drawable.rete1_t1);

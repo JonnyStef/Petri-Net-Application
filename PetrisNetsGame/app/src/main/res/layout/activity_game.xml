@@ -29,7 +29,8 @@
         android:onClick="buttonEscOnClick"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_exit" />
+        app:srcCompat="@drawable/ic_exit"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageNet"
@@ -41,7 +42,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/playerTurnText"
-        app:srcCompat="@drawable/rete1_init" />
+        app:srcCompat="@drawable/rete1_init"
+        tools:ignore="ContentDescription" />
 
     <Button
         android:id="@+id/buttonT1"

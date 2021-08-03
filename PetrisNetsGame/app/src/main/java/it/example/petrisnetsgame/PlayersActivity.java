@@ -11,8 +11,6 @@ import android.widget.EditText;
 
 public class PlayersActivity extends AppCompatActivity {
 
-    private AlertDialog.Builder dialogbuilder;
-    private AlertDialog dialog;
     Button avvia, rules;
 
     private EditText player1;
@@ -32,12 +30,12 @@ public class PlayersActivity extends AppCompatActivity {
 
     public void multiplayerRulesPopup(){
 
-        dialogbuilder = new AlertDialog.Builder(this);
+        AlertDialog.Builder dialogbuilder = new AlertDialog.Builder(this);
         final View rulesPopupView = getLayoutInflater().inflate(R.layout.multiplayer_rules_popup, null);
 
 
         dialogbuilder.setView(rulesPopupView);
-        dialog = dialogbuilder.create();
+        AlertDialog dialog = dialogbuilder.create();
         dialog.show();
         dialog.setCanceledOnTouchOutside(true);
         dialog.setCancelable(true);
