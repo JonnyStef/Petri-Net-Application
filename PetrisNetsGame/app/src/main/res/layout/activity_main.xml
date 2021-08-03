@@ -37,13 +37,13 @@
         android:id="@+id/buttonTwo"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_play"
+        android:onClick="buttonTwoPlayersOnCLick"
         android:text="@string/twoPlayers"
         android:textStyle="bold"
-        android:onClick="buttonTwoPlayersOnCLick"
-        android:background="@drawable/button_play"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonSingle" />
 

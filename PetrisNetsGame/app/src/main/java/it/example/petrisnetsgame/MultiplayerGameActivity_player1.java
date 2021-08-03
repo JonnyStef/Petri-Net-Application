@@ -58,7 +58,7 @@ public class MultiplayerGameActivity_player1 extends AppCompatActivity {
     public void createFirstGamePopup(){
 
         dialogbuilder = new AlertDialog.Builder(this);
-        final View finishPopupView = getLayoutInflater().inflate(R.layout.finish_popup, null);
+        final View finishPopupView = getLayoutInflater().inflate(R.layout.finish_player1_popup, null);
 
         timeFinish = finishPopupView.findViewById(R.id.timeFinishText);
         giocatore2TextTurn = finishPopupView.findViewById(R.id.giocatore2Text);
@@ -68,21 +68,20 @@ public class MultiplayerGameActivity_player1 extends AppCompatActivity {
         dialog = dialogbuilder.create();
         dialog.show();
         dialog.setCanceledOnTouchOutside(false);
+        dialog.setCancelable(false);
 
         timeFinish.setText(chronometer.getText());
 
         String[] playerNames = getIntent().getStringArrayExtra("Nomi");
         giocatore2TextTurn.setText(playerNames[1]);
 
-        inizia.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        inizia.setOnClickListener(v -> {
 
-                Intent i = new Intent(MultiplayerGameActivity_player1.this, MultiplayerGameActivity_player2.class);
-                i.putExtra("punteggio_giocatore1", new CharSequence[] {chronometer.getText()});
-                i.putExtra("Nomi", playerNames);
-                startActivity(i);
-            }
+            Intent i = new Intent(MultiplayerGameActivity_player1.this,
+                    MultiplayerGameActivity_player2.class);
+            i.putExtra("punteggio_giocatore1", new CharSequence[] {chronometer.getText()});
+            i.putExtra("Nomi", playerNames);
+            startActivity(i);
         });
 
 
@@ -100,22 +99,16 @@ public class MultiplayerGameActivity_player1 extends AppCompatActivity {
     }
 
 
+
         public void buttonEscOnClick(View view) {
 
             AlertDialog.Builder builder = new AlertDialog.Builder(MultiplayerGameActivity_player1.this);
             builder.setTitle(R.string.warning);
             builder.setMessage(R.string.warning_message);
-            builder.setPositiveButton("Sì", (dialog, which) -> {
+            builder.setPositiveButton("Sì", (dialog, which) ->
+                    startActivity(new Intent(MultiplayerGameActivity_player1.this, MainActivity.class)));
 
-                startActivity(new Intent(MultiplayerGameActivity_player1.this, MainActivity.class));
-
-            });
-
-            builder.setNegativeButton("No", (dialog, which) -> {
-
-                dialog.dismiss();
-
-            });
+            builder.setNegativeButton("No", (dialog, which) -> dialog.dismiss());
             builder.show();
         }
 

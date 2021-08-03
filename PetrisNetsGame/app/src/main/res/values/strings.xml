@@ -11,7 +11,7 @@
     <string name="warning_message">Vuoi davvero uscire? I progressi della partita verranno persi.</string>
     <string name="warning">Attenzione</string>
     <string name="disabilitated_transition">Questa transizione non è abilitata!</string>
-    <string name="congratulations">Complimenti!</string>
+    <string name="congratulations">Complimenti!!</string>
     <string name="popupText1">Hai concluso con un tempo di:</string>
     <string name="popupText2">Ora è il turno del Giocatore 2.</string>
     <string name="popupText3">Passa lo smartphone a:</string>
@@ -33,4 +33,6 @@
     <string name="game_target1">- L\' obiettivo del gioco è raggiungere la configurazione finale (segnata dagli stati riempiti di verde) nel minor tempo possibile</string>
     <string name="game_target2">- Dopo Che il Giocatore 1 ha completato la partita, viene segnato il suo tempo di completamento e dovrà passare lo smartphone al Giocatore 2 che per iniziare la partita dovrà cliccare il pulsante INIZIA</string>
     <string name="game_target3">- Concluso il Giocatore 2, viene segnato il suo tempo e si procede con il confronto dei tempi: il giocatore che ha realizzato il tempo più basso vince.</string>
+    <string name="draw_message">Nessuno dei 2: è un Pareggio!</string>
+    <string name="the_winner_is">Il Vincitore è :</string>
 </resources>

@@ -42,6 +42,7 @@ public class PlayersActivity extends AppCompatActivity {
         dialog.setCanceledOnTouchOutside(true);
         dialog.setCancelable(true);
 
+
     }
 
     public void buttonAvviaOnClick(View view) {
@@ -69,7 +70,6 @@ public class PlayersActivity extends AppCompatActivity {
     }
 
 
-   // }
 
     public void buttonBackOnClick(View view){
 

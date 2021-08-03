@@ -13,11 +13,13 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 public class MultiplayerGameActivity_player2 extends AppCompatActivity {
 
     Button t1, t2, t3, t4, t5, t6, t7, t8, t9;
-    TextView timeFinish,giocatore2TextTurn;
+    Button restart, home;
+    TextView timeFinishPlayer1, timeFinishPlayer2,giocatore2Name, giocatore1Name, winner;
     ImageView net;
     Chronometer chronometer;
     private AlertDialog.Builder dialogbuilder;
@@ -53,6 +55,87 @@ public class MultiplayerGameActivity_player2 extends AppCompatActivity {
         }
     }
 
+    public void createEndGamePopup(){
+
+        dialogbuilder = new AlertDialog.Builder(this);
+        final View finishGamePopupView = getLayoutInflater().inflate(R.layout.finish_player2_popup, null);
+
+        timeFinishPlayer1 = finishGamePopupView.findViewById(R.id.timeFinishPlayer1Text);
+        timeFinishPlayer2 = finishGamePopupView.findViewById(R.id.timeFinishPlayer2Text);
+        giocatore1Name = finishGamePopupView.findViewById(R.id.player2Text);
+        winner = finishGamePopupView.findViewById(R.id.winnerText);
+        home = finishGamePopupView.findViewById(R.id.buttonHome);
+        restart = finishGamePopupView.findViewById(R.id.buttonRestart);
+
+
+        dialogbuilder.setView(finishGamePopupView);
+        dialog = dialogbuilder.create();
+        dialog.show();
+        dialog.setCanceledOnTouchOutside(false);
+
+        timeFinishPlayer2.setText(chronometer.getText().toString());
+        String minutesPlayer2 = (chronometer.getText().toString()).substring(0,1);
+        String secondsPlayer2 = (chronometer.getText().toString()).substring(chronometer.getText().toString().indexOf(":") + 1);
+        int minPlayer2 = Integer.parseInt(minutesPlayer2);
+        int secPlayer2 = Integer.parseInt(secondsPlayer2);
+
+
+        String[] playerNames = getIntent().getStringArrayExtra("Nomi");
+        giocatore1Name.setText(playerNames[0]);
+
+        CharSequence [] punteggioGiocatore1 = getIntent().getCharSequenceArrayExtra("punteggio_giocatore1");
+        timeFinishPlayer1.setText(punteggioGiocatore1[0].toString());
+        String minutesPlayer1 = (punteggioGiocatore1[0].toString()).substring(0,1);
+        String secondsPlayer1 = (punteggioGiocatore1[0].toString()).substring(punteggioGiocatore1[0].toString().indexOf(":") + 1);
+        int minPlayer1 = Integer.parseInt(minutesPlayer1);
+        int secPlayer1 = Integer.parseInt(secondsPlayer1);
+
+        String matchWinner = compareTimes(minPlayer1, secPlayer1, minPlayer2, secPlayer2);
+
+        winner.setText(matchWinner);
+        if(matchWinner.equals(playerNames[0]))
+            winner.setTextColor(ContextCompat.getColor(this, R.color.blue));
+        else if(matchWinner.equals(playerNames[1]))
+            winner.setTextColor(ContextCompat.getColor(this, R.color.red));
+
+
+        home.setOnClickListener(v -> {
+            Intent i = new Intent(MultiplayerGameActivity_player2.this, MainActivity.class);
+            startActivity(i);
+        });
+
+        restart.setOnClickListener(v -> {
+            Intent i = new Intent(MultiplayerGameActivity_player2.this,
+                    MultiplayerGameActivity_player1.class);
+            i.putExtra("Nomi", playerNames);
+            startActivity(i);
+        });
+
+
+
+    }
+
+    public String compareTimes(int min1, int sec1, int min2, int sec2) {
+
+        String[] playerNames = getIntent().getStringArrayExtra("Nomi");
+
+        if (min1 < min2)
+            return playerNames[0]  ;
+        else if (min1 >min2)
+            return playerNames[1];
+
+        else{
+
+            if(sec1 < sec2)
+                return playerNames[0];
+            else if (sec1 >sec2)
+                return playerNames[1];
+            else
+                return getString(R.string.draw_message);
+        }
+    }
+
+
 
     @Override
     public void onBackPressed() {
@@ -71,17 +154,10 @@ public class MultiplayerGameActivity_player2 extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(MultiplayerGameActivity_player2.this);
         builder.setTitle(R.string.warning);
         builder.setMessage(R.string.warning_message);
-        builder.setPositiveButton("Sì", (dialog, which) -> {
+        builder.setPositiveButton("Sì", (dialog, which) ->
+                startActivity(new Intent(MultiplayerGameActivity_player2.this, MainActivity.class)));
 
-            startActivity(new Intent(MultiplayerGameActivity_player2.this, MainActivity.class));
-
-        });
-
-        builder.setNegativeButton("No", (dialog, which) -> {
-
-            dialog.dismiss();
-
-        });
+        builder.setNegativeButton("No", (dialog, which) -> dialog.dismiss());
         builder.show();
     }
 
@@ -89,6 +165,7 @@ public class MultiplayerGameActivity_player2 extends AppCompatActivity {
         if (areDrawablesIdentical(net.getDrawable(), getDrawable(R.drawable.rete1_init))) {
             net.setImageResource(R.drawable.rete1_t1);
             chronometer.stop();
+            createEndGamePopup();
 
         } else {
             Toast.makeText(this, R.string.disabilitated_transition, Toast.LENGTH_SHORT).show();

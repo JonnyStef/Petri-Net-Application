@@ -4,12 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/drawable/button_back.xml" value="0.1125" />
+        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/drawable/button_home.xml" value="0.2203125" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/drawable/button_play.xml" value="0.1125" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/drawable/button_rules.xml" value="0.1125" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/drawable/button_transition.xml" value="0.1125" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/activity_game.xml" value="0.18" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/activity_players.xml" value="0.22" />
+        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/finish_game_popup.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/finish_player2_popup.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/finish_popup.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/multiplayer_rules_popup.xml" value="0.20416666666666666" />
       </map>

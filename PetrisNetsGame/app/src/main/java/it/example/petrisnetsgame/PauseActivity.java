@@ -30,15 +30,10 @@ public class PauseActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(PauseActivity.this);
         builder.setTitle(R.string.warning);
         builder.setMessage(R.string.warning_message);
-        builder.setPositiveButton("Sì", (dialog, which) -> {
+        builder.setPositiveButton("Sì", (dialog, which) ->
+                startActivity(new Intent(PauseActivity.this, MainActivity.class)));
 
-            startActivity(new Intent(PauseActivity.this, MainActivity.class));
-
-        });
-
-        builder.setNegativeButton("No", (dialog, which) -> {
-            dialog.dismiss();
-        });
+        builder.setNegativeButton("No", (dialog, which) -> dialog.dismiss());
         builder.show();
 
 }
