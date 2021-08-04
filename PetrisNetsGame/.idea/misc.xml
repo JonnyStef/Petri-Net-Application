@@ -28,9 +28,11 @@
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/finish_game_popup.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/finish_player1_popup.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/finish_player2_popup.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/finish_player2_popup.xml" value="0.18" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/finish_popup.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/multiplayer_rules_popup.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2203125" />
+        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2203125" />
       </map>
     </option>
   </component>

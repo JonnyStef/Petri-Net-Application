@@ -40,4 +40,5 @@
     <string name="player_finish_string">ha concluso con il tempo di:</string>
     <string name="restart">Restart</string>
     <string name="home">Home</string>
+    <string name="click_to_exit">Clicca ancora per uscire dall\' applicazione</string>
 </resources>
