@@ -79,7 +79,7 @@
         android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
-        android:background="@drawable/button_play"
+        android:background="@drawable/button_start"
         android:onClick="buttonAvviaOnClick"
         android:text="@string/start"
 

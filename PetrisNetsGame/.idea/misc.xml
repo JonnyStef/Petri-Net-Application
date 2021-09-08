@@ -15,22 +15,26 @@
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/drawable/ic_exit.xml" value="0.2203125" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/drawable/ic_pause.xml" value="0.2203125" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/drawable/popup_background.xml" value="0.215625" />
+        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/drawable/popup_deadlock.xml" value="0.2203125" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/drawable/popup_rules.xml" value="0.215625" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/font/bangers.xml" value="0.11927083333333334" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/font/bungee_shade.xml" value="0.11927083333333334" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/font/comfortaa.xml" value="0.11927083333333334" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/font/comfortaa_light.xml" value="0.11927083333333334" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/font/luckiest_guy.xml" value="0.11927083333333334" />
-        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/activity_game.xml" value="0.18" />
-        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/activity_game.xml" value="0.25" />
+        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/activity_pause.xml" value="0.19166666666666668" />
-        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/activity_players.xml" value="0.22" />
-        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/activity_players.xml" value="0.25" />
+        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/deadlock_player1_popup.xml" value="0.25" />
+        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/deadlock_player2_popup.xml" value="0.25" />
+        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/deadlock_popup.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/finish_game_popup.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/finish_player1_popup.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/finish_player2_popup.xml" value="0.18" />
+        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/finish_player1_popup.xml" value="0.25" />
+        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/finish_player2_popup.xml" value="0.25" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/finish_popup.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/multiplayer_rules_popup.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/layout/multiplayer_rules_popup.xml" value="0.25" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2203125" />
         <entry key="..\:/Users/jonst/Documents/GitHub/Petri-Net-Application/PetrisNetsGame/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2203125" />
       </map>

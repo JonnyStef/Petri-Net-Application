@@ -26,8 +26,6 @@
     <string name="t7">T7</string>
     <string name="t8">T8</string>
     <string name="t9">T9</string>
-    <string name="onePlayer">1 Giocatore</string>
-    <string name="twoPlayers">2 Giocatori</string>
     <string name="player2">Giocatore 2</string>
     <string name="empty_warning">Il nome non può essere vuoto!</string>
     <string name="game_target1" tools:ignore="Typos">- L\' obiettivo del gioco è raggiungere la configurazione finale (segnata dagli stati riempiti di verde) nel minor tempo possibile</string>
@@ -41,4 +39,14 @@
     <string name="restart">Restart</string>
     <string name="home">Home</string>
     <string name="click_to_exit">Clicca ancora per uscire dall\' applicazione</string>
+    <string name="target_game1">* Raggiungi il posto p9 per concludere!</string>
+    <string name="target_game2">* Raggiungi il posto p9 per concludere!</string>
+    <string name="target_game3">* Raggiungi il posto p7 con 2 marche per concludere!</string>
+    <string name="target_game4">* Raggiungi i posti p9 e p10 per concludere!</string>
+    <string name="target_game5">* Raggiungi i posti p10 con 2 marche, e p4 per concludere!</string>
+    <string name="finish_with">ha concluso con</string>
+    <string name="peccato">Peccato</string>
+    <string name="finishedWithA">Hai concluso con un</string>
+    <string name="deadlock">DEADLOCK</string>
+    <string name="button_play">Gioca</string>
 </resources>

@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button buttonSinglePlayer, buttonTwoPlayers;
+    Button buttonPlay;
     boolean isPressed = false;
 
 
@@ -19,40 +19,30 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        buttonSinglePlayer = findViewById(R.id.buttonSingle);
-        buttonTwoPlayers = findViewById(R.id.buttonTwo);
-
+        buttonPlay = findViewById(R.id.buttonPlay);
 
     }
 
-    public void buttonTwoPlayersOnCLick(View view) {
+    public void buttonGiocaOnCLick(View view) {
         Intent i = new Intent(this, PlayersActivity.class);
         startActivity(i);
-
     }
 
     public void onBackPressed() {
         if(isPressed){
-            //quando si preme due volte indietro entro un secondo
-            //chiudi tutte le activity
+
             finishAffinity();
             System.exit(0);
 
         }else{
-            //quando il doppio click ritarda per 2 secondi
-            //display toast
             Toast.makeText(getApplicationContext(),
-                    R.string.click_to_exit, Toast.LENGTH_SHORT).show();
+                    R.string.click_to_exit,
+                    Toast.LENGTH_SHORT).show();
 
             isPressed = true;
         }
 
-        //inizializzo il runnable
         Runnable runnable = () -> isPressed = false;
-
-        //handler delay per 2 secondi
         new Handler().postDelayed(runnable, 2000);
-
-
     }
 }

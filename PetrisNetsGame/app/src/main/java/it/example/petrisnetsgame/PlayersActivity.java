@@ -28,23 +28,20 @@ public class PlayersActivity extends AppCompatActivity {
         rules = findViewById(R.id.buttonRules);
     }
 
+
     public void multiplayerRulesPopup(){
 
         AlertDialog.Builder dialogbuilder = new AlertDialog.Builder(this);
-        final View rulesPopupView = getLayoutInflater().inflate(R.layout.multiplayer_rules_popup, null);
-
-
+        final View rulesPopupView = getLayoutInflater().inflate(R.layout.multiplayer_rules_popup,
+                null);
         dialogbuilder.setView(rulesPopupView);
         AlertDialog dialog = dialogbuilder.create();
         dialog.show();
         dialog.setCanceledOnTouchOutside(true);
         dialog.setCancelable(true);
-
-
     }
 
     public void buttonAvviaOnClick(View view) {
-
         String player1Name = player1.getText().toString();
         String player2Name = player2.getText().toString();
 
@@ -52,14 +49,12 @@ public class PlayersActivity extends AppCompatActivity {
             player1.setError(getString(R.string.empty_warning));
             player1.requestFocus();
             return;
-
         }
 
         if (player2Name.isEmpty()) {
             player2.setError(getString(R.string.empty_warning));
             player2.requestFocus();
             return;
-
         }
 
         Intent intent = new Intent(this, MultiplayerGameActivity_player1.class);
@@ -70,14 +65,11 @@ public class PlayersActivity extends AppCompatActivity {
 
 
     public void buttonBackOnClick(View view){
-
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
-
     }
 
     public void buttonRulesOnClick(View view) {
         multiplayerRulesPopup();
-
     }
 }
