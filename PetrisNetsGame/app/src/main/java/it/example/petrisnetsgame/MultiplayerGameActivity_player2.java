@@ -16,7 +16,6 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
-
 public class MultiplayerGameActivity_player2 extends AppCompatActivity {
 
     Button t1, t2, t3, t4, t5, t6, t7, t8, t9;
